@@ -9,11 +9,10 @@ Usage:
 
 */
 
-var activeDoc = app.activeDocument
-
-if (activeDoc > 0) { // check if there is an active document to work on
+if (app.documents.length > 0) { // check if there is an active document to work on
+  var activeDoc = app.activeDocument
   var selection = activeDoc.selection
-  
+
   if (selection.length > 0) { // check if anything is selected
     for (var i = 0; i < selection.length; i++) {
       newLayer = activeDoc.layers.add()
