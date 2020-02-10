@@ -1,11 +1,9 @@
 /*
-
-Illustrator CC script for moving each element of a selection in a separate new layer with the same name of the element itself.
-======
-Usage:
-1. Select at least one item
-2. Run this script
-
+- File: moveToSeparateLayers.jsx
+- Description: Illustrator CC script
+- Version: 1.2
+- Author: Simone Fiorucci https://github.com/simofiorucci
+- Credits: deleteEmptyLayers.jsx is inspired by Ai Scripts example https://aiscripts.com/delete-empty-layers-script/
 */
 
 #include 'helpers/moveToNewLayers.jsx'
@@ -30,7 +28,7 @@ function main() {
   frame: Panel { text: 'Optional cleaning features', \
     options: Group { orientation: 'column', alignChildren: 'left', margins: [5, 15, 5, 5], \
       cbEmpty: Checkbox { text: 'Delete empty layers', value: false, enabled: true }, \
-      cbOthers: Checkbox { text: 'Keep the moved layers only', value: false, enabled: true } \
+      cbOthers: Checkbox { text: 'Keep the selected layers only', value: false, enabled: true } \
     } \
   }, \
     runBtn: Button { text: 'Move layers', margins: 5, enabled: true, properties: { name: 'ok' } } \
