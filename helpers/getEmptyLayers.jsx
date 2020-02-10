@@ -3,14 +3,14 @@ function getEmptyLayers(container, arr) {
 
     for (var i = 0; i < layers.length; i++) {
         var currentLayer = layers[i]
-        // initialize all layers with deletion flag set to true
+        // initializing all layers with deletion flag set to true
         currentLayer.canDelete = true
         // process sublayers first
         if (currentLayer.layers.length > 0) {
             getEmptyLayers(currentLayer, arr)
         }
 
-        // then process objects in current layer
+        // processing objects in current layer:
         // if layer has a sublayer with objects, deletion flag was previously set to false
         // ignore this layer and set its parent layer (container) to false as well, otherwise add to empty layers array
         if (currentLayer.pageItems.length == 0 && currentLayer.canDelete) {
