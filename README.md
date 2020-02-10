@@ -10,7 +10,7 @@ Just select the objects you want to keep and run this script: they will be put o
 
 ## Pre-requisites
 
-Requires `moveToNewLayers.jsx`, `getEmptyLayers.jsx`, `deleteEmptyLayers.jsx` and `deleteNotMovedLayers` in the `/helpers` folder
+Requires `moveToNewLayers.jsx`, `getEmptyLayers.jsx`, `deleteEmptyLayers.jsx` and `deleteNotMovedLayers.jsx` in the `/helpers` folder
 
 ## Initial scenario
 
